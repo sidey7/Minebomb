@@ -1,155 +1,339 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Mina</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Loja de Produtos</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <style>  
 
-        .tabuleiro {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 10px;
-            max-width: 400px;
-            width: 100%;
-            padding: 20px;
-            margin-top: -10px;
-            margin-left: -90px;
-        }
 
-        .cell {
-            width: 90px;
-            height: 90px;
-            background-color: #00a2ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
+</style>  </head>  
+<body><nav>  
+    <h2>Solity</h2>  
+    <img class="menu-icon" src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu assustador"/>  
+</nav>  <main>  
+    <h2 class="brilho">SEJA BEM VINDO !</h2> <!-- Animação apenas aqui -->  
+</main>  
+<section class="sobre">  
+    <div class="conteudo-sobre">  
+        <h2>Sobre Mim</h2>  
+        <p>Olá! Eu sou o Sid, um apaixonado por tecnologia e criação digital. Desde 2024, venho desenvolvendo soluções inovadoras e personalizadas para meus clientes, seja criando bots incríveis, sites interativos ou sistemas de vendas online. Meu objetivo é sempre fornecer a melhor experiência digital para você!</p>  
+        <p>Além de programar, sou especialista em criar sites, bots, sorteios, sites de quiz, lojas e muito mais. Com cada projeto, busco criar algo único, que combine design, funcionalidade e eficiência.</p>  
+        <p>Como Ganhei Dinheiro e Quero Ensinar Você... (continua)</p>  
+    </div>  
+    <br><br><br>  
+          <div class="expkica"id="expkica">
+          <h2>como fuciona ?</h2>
+          <p>
+Aprenda a Ganhar Dinheiro no Nicho Hot! 
 
-        .cell.revealed {
-            background-color: #ff0000;
-            color: white;
-        }
+Com essa estratégia, você vai criar sua modelo virtual e montar um perfil atrativo para faturar alto. Você precisará de um número de WhatsApp, uma conta para receber pagamentos e terá acesso a modelos e áudios prontos.
 
-        .cell.correct {
-            background-color: #27ae60;
-            color: white;
-        }
-
-        .botao {
-            padding: 25px 10px;
-            background-color: #27ae60;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin-top: -7px;
-            width: 80%;
-            border-radius: 8px;
+O segredo do sucesso está na comunicação estratégica! Construa confiança antes de monetizar suas interações. Seguindo o método corretamente, é possível faturar R$3.000 ou mais por mês. Comece hoje e transforme sua renda! </p>
+          <button id="fechar">Continuar</button>
+          <button id="none">Voltar</button>
+        </div>
+    <div class="comeco">  
+        <h2>Estrategias pra ganhar dinheiro!</h2>  
+        <div class="image1">  
+            <img src="src/hot.jpg" alt="imagem explicativa">  
+            <p class="descricao">Como vender Nicho hot pelo WhatsApp automatico</p>  
+            <button id="bota1" class="botao">Saiba Mais</button>  
             
-        }
+           <div class="expkica"id="expkica1">
+          <h2>como fuciona ?</h2>
+          <p> Estratégia Simples para Ganhar R$10.000+ por Mês!
 
-        .botao:hover {
-            background-color: #1e8e47;
-        }
-    </style>
-</head>
-<body>
-    <h1>Jogo da Mina</h1>
-    
-    <div class="tabuleiro" id="tabuleiro">
-        <!-- As células (botões) serão geradas aqui via JavaScript -->
-    </div>
+Quer faturar R$10.000 ou mais usando apenas o celular? Com esse método testado, você aprende tudo do zero, sem precisar de experiência. No primeiro dia, já é possível ganhar R$100 a R$500 aplicando as técnicas certas!
 
-    <button class="botao" onclick="reiniciarJogo()">APOSTA</button>
+O que você precisa?
 
-    <script>
-        const numCells = 25; // Número de células no tabuleiro (5x5)
-        const maxBombas = 2; // Número máximo de bombas
-        let bombaIndices = []; // Índices das bombas no tabuleiro
-        let jogoAtivo = true;
+Um celular ou computador
+Acesso à internet
+Uma conta para receber pagamentos
 
-        // Função para gerar índices aleatórios para as bombas
-        function gerarBombas() {
-            bombaIndices = [];
-            while (bombaIndices.length < maxBombas) {
-                let bombaIndex = Math.floor(Math.random() * numCells);
-                if (!bombaIndices.includes(bombaIndex)) {
-                    bombaIndices.push(bombaIndex);
-                }
-            }
-        }
+Você vai aprender a atrair clientes que pagam bem e a escalar seus ganhos rapidamente. Além disso, terá acesso a grupos exclusivos e conteúdos prontos para começar hoje mesmo. Não perca essa oportunidade! </p>
+          <button id="fechar1">Continuar</button>
+          <button id="none1">Voltar</button>
+        </div>
+        </div>  
+            <div class="image1">  
+           <img src="src/golpe.jpg" alt="imagem explicativa">  
+            <p class="descricao">como ganhar dinheiro de forma simples ir pratico</p>  
+            
+            <button id="bota3" class="botao">Saiba Mais</button> 
+            
+            
+                   <div class="expkica"id="expkica2">
+          <h2>como fuciona ?</h2>
+<p>📖 As 48 Leis do Poder – Guia Completo para o Sucesso 📖
 
-        // Função para criar o tabuleiro com botões (células)
-        function criarTabuleiro() {
-            const tabuleiro = document.getElementById("tabuleiro");
-            tabuleiro.innerHTML = ''; // Limpa o tabuleiro antes de gerar novamente
+Descubra as estratégias usadas por grandes líderes para influenciar, persuadir e alcançar o sucesso. Com este material, você aprenderá a conquistar respeito, evitar manipulações e tomar decisões estratégicas em qualquer situação. Entenda como o poder funciona e use isso a seu favor nos negócios, trabalho e vida pessoal. Você vai dominar técnicas para ganhar autoridade, saber quando agir e como se proteger de inimigos ocultos. As 48 Leis do Poder são um verdadeiro manual para quem deseja crescer e se destacar. Aprenda, aplique e transforme sua vida! 🚀
 
-            gerarBombas(); // Gera novas bombas a cada reinício
+</p>
+          <button id="fechar2">Continuar</button>
+          <button id="none2">Voltar</button>
+        </div>
+        </div>
+        
+        
+        <br>
+        <h2>livros</h2>
+           <div class="image1">  
+           <img src="src/48leis.jpg" alt="imagem explicativa">  
+            <p class="descricao">As 48 Leis do Poder - Robert Greene - Livro fisico<span style="color:red;"> envio PDF</span></p>  
+            <button id="bota4"class="botao">Saiba Mais</button>  
+        </div>  
+                   <div class="image1">  
+           <img src="src/maisesoerto.jpg" alt="imagem explicativa">  
+            <p class="descricao">Livro - Mais esperto  
+            que o Diabo: O Misteiro Revelado da Liberdade e do Sucesso<span style="color:red;"> envio PDF</span></p>  
+            <button id="bota5"class="botao">Saiba Mais</button> 
+                               <div class="expkica"id="expkica3">
+          <h2>como fuciona ?</h2>
+          <p>
+📖 Mais Esperto que o Diabo – O Mistério Revelado da Liberdade e do Sucesso 📖
 
-            for (let i = 0; i < numCells; i++) {
-                const cell = document.createElement("div");
-                cell.classList.add("cell");
-                cell.setAttribute("data-index", i);
-                cell.onclick = () => revelarCell(i, cell);
-                tabuleiro.appendChild(cell);
-            }
-        }
+Neste livro, Napoleon Hill revela como o "Diabo" usa medos e dúvidas para manter as pessoas longe do sucesso. Você aprenderá como controlar sua mente, eliminar crenças limitantes e superar a procrastinação. Hill explica que a chave para o sucesso está na autodisciplina, no controle do pensamento e na ação decidida. Ao aplicar os princípios do livro, você pode alcançar liberdade financeira e pessoal. Se você quer se libertar das amarras mentais e conquistar seus objetivos, este livro é uma leitura essencial para transformar sua vida!
+</p>
+          <button id="fechar3">Continuar</button>
+          <button id="none3">Voltar</button>
+        </div>
+        </div>  
+                                       <div class="expkica"id="expkica4">
+          <h2>como fuciona ?</h2>
+          <p>
 
-        // Função para revelar a célula clicada
-        function revelarCell(index, cell) {
-            if (!jogoAtivo) return; // Impede clicar depois de perder
 
-            if (bombaIndices.includes(index)) {
-                // Se for bomba
-                cell.classList.add("revealed");
-                cell.textContent = "💣"; // Exibe o ícone de bomba
-                mostrarBombas(); // Revela todas as bombas
-                alert("Você perdeu!");
-                jogoAtivo = false; // Jogo termina
-            } else {
-                // Se for uma célula correta
-                cell.classList.add("correct");
-                cell.textContent = "💎"; // Exibe o ícone de prêmio
-            }
-        }
+Livro - O Poder da Manipulação de Jacob Petry ensina as técnicas usadas para influenciar as pessoas e como reconhecê-las. O autor explora estratégias psicológicas para persuadir, controlar e influenciar decisões de forma eficaz. Você vai aprender a identificar manipulações e também a utilizar essas técnicas para alcançar seus objetivos. O livro mostra como usar o poder da mente humana para criar relacionamentos mais fortes e alcançar sucesso. Além disso, ensina a defender-se de manipulações externas e a melhorar sua habilidade de comunicação. É um guia essencial para quem quer entender as dinâmicas do poder e como aplicá-las de maneira estratégica.
 
-        // Função para revelar todas as bombas no tabuleiro
-        function mostrarBombas() {
-            const todasCelulas = document.querySelectorAll('.cell');
-            todasCelulas.forEach((cell, index) => {
-                if (bombaIndices.includes(index) && !cell.classList.contains('revealed')) {
-                    cell.classList.add("revealed");
-                    cell.textContent = "💣"; // Exibe a bomba
-                }
-            });
-        }
 
-        // Função para reiniciar o jogo
-        function reiniciarJogo() {
-            jogoAtivo = true;
-            criarTabuleiro(); // Cria o tabuleiro novamente
-        }
 
-        // Inicia o jogo ao carregar a página
-        criarTabuleiro();
-    </script>
-</body>
-</html>
+ </p>
+          <button id="fechar4">Continuar</button>
+          <button id="none4">Voltar</button>
+        </div>
+            <div class="image1">  
+           <img src="src/mani.jpg" alt="imagem explicativa">  
+            <p class="descricao">LIVRO - PODER DA MANIPULAÇÃO Jacob Petry Faro <span style="color:red;">envio PDF</span></p>  
+            <button id="bota6" class="botao">Saiba Mais</button>  
+        </div>  
+    </div>  
+<br>  
+
+
+
+
+
+            <div class="expkica"id="expkica7">
+          <h2>como fuciona ?</h2>
+          <p>O quiz da <span style="color:#9B30FF;">NUBANK</span> interativo vai permitir que o usuário ganhe um saldo fictício a cada resposta certa ou errada. Ao longo de 10 páginas de perguntas, o saldo vai crescendo, criando a ilusão de que ele está ganhando dinheiro. No final, o usuário será convidado a pagar uma taxa antifraude para sacar o valor acumulado. Essa taxa vai ser apresentada como uma condição para que ele possa "retirar" o dinheiro, mas, na verdade, o saldo é fictício. Após o pagamento da taxa, ele será redirecionado para comprar seu produto Esse tipo de estratégia cria uma experiência envolvente para o usuário, levando-o a querer pagar a taxa para "sacar" o saldo e efetuar a compra do produto.
+</p>
+       <button id="fechar7">Continuar</button>
+          <button id="none7">Voltar</button>
+        </div>
+        
+        
+            
+    <div class="lojinha">  
+        <h2>Lojinha do Sid</h2>  
+        <br>  
+        <h2>Quizz</h2>  
+        <div class="produtos">  
+            <div class="produto">  
+    <img src="src/nunbk.jpg" alt="produto 1">  
+                <p class="descricao1">QUIZZ NUBANK</p>  
+                <p>R$ 49,99,99</p>  
+                <button id="bota7"class="botao">ADQUIRIR</button>  
+            </div>  
+            
+            
+            
+            <div class="expkica"id="expkica8">
+          <h2>como fuciona ?</h2>
+          <p>O quiz do <span style="color:red;">NETFLIX</span> interativo vai permitir que o usuário ganhe um saldo fictício a cada resposta certa ou errada. Ao longo de 10 páginas de perguntas, o saldo vai crescendo, criando a ilusão de que ele está ganhando dinheiro. No final, o usuário será convidado a pagar uma taxa antifraude para sacar o valor acumulado. Essa taxa vai ser apresentada como uma condição para que ele possa "retirar" o dinheiro, mas, na verdade, o saldo é fictício. Após o pagamento da taxa, ele será redirecionado para comprar seu produto Esse tipo de estratégia cria uma experiência envolvente para o usuário, levando-o a querer pagar a taxa para "sacar" o saldo e efetuar a compra do produto.
+</p>
+       <button id="fechar8">Continuar</button>
+          <button id="none8">Voltar</button>
+        </div>
+        
+            
+            
+            
+            
+            
+            
+            <div class="produto">  
+                <img src="src/NETFLIX.jpg" alt="produto 2">  
+                <p class="descricao1">QUIZZ NETFLIX</p>  
+                <p>R$ 99,99</p>  
+                <button id="bota8"class="botao">ADQUIRIR</button>  
+            </div>  
+            
+            
+            
+            
+                        <div class="expkica"id="expkica9">
+          <h2>como fuciona ?</h2>
+          <p>O quiz do <span style="color:#FFD700;">MERCADO LIVRE</span> interativo vai permitir que o usuário ganhe um saldo fictício a cada resposta certa ou errada. Ao longo de 10 páginas de perguntas, o saldo vai crescendo, criando a ilusão de que ele está ganhando dinheiro. No final, o usuário será convidado a pagar uma taxa antifraude para sacar o valor acumulado. Essa taxa vai ser apresentada como uma condição para que ele possa "retirar" o dinheiro, mas, na verdade, o saldo é fictício. Após o pagamento da taxa, ele será redirecionado para comprar seu produto Esse tipo de estratégia cria uma experiência envolvente para o usuário, levando-o a querer pagar a taxa para "sacar" o saldo e efetuar a compra do produto.
+</p>
+       <button id="fechar9">Continuar</button>
+          <button id="none9">Voltar</button>
+        </div>
+        
+        
+        
+            <div class="produto">  
+                <img src="src/mercadolivre.jpg" alt="produto 3">  
+                <p class="descricao1">QUIZZ MERCADO LIVRE</p>  
+                <p>R$ 89,99</p>  
+                <button id="bota9" class="botao">ADQUIRIR</button>  
+            </div>  
+            
+            
+                                    <div class="expkica"id="expkica10">
+          <h2>como fuciona ?</h2>
+          <p>O quiz do <span style="color:#32CD32;"> SPOTIFY </span>interativo vai permitir que o usuário ganhe um saldo fictício a cada resposta certa ou errada. Ao longo de 10 páginas de perguntas, o saldo vai crescendo, criando a ilusão de que ele está ganhando dinheiro. No final, o usuário será convidado a pagar uma taxa antifraude para sacar o valor acumulado. Essa taxa vai ser apresentada como uma condição para que ele possa "retirar" o dinheiro, mas, na verdade, o saldo é fictício. Após o pagamento da taxa, ele será redirecionado para comprar seu produto Esse tipo de estratégia cria uma experiência envolvente para o usuário, levando-o a querer pagar a taxa para "sacar" o saldo e efetuar a compra do produto.
+</p>
+       <button id="fechar10">Continuar</button>
+          <button id="none10">Voltar</button>
+        </div>
+            <div class="produto">  
+                <img src="src/spotfy.jpg" alt="produto 4">  
+                <p class="descricao1">QUIZZ SPOTIFY</p>  
+                <p>R$ 89,99</p>  
+                <button id="bota10" class="botao">ADQUIRIR</button>  
+            </div>  
+            </div>  
+        <div class="lojinha">  
+        <h2>TELAS FEKS</h2>  
+        <div class="produtos">  
+        
+        
+        
+                    <div class="expkica"id="expkica11">
+          <h2>como fuciona ?</h2>
+          <p>
+            Essa estratégia de telas fake funciona da seguinte forma: o usuário vai acessar uma página onde será solicitado a inserir dados, como usuário e senha. Esses dados digitados são coletados em tempo real e podem ser armazenados em um banco de dados. Para isso, é necessário configurar uma plataforma segura que armazene essas informações de maneira eficiente. O processo envolve usar ferramentas como HTML, CSS, JavaScript e um backend em Node.js para capturar e processar os dados.
+</p>
+       <button id="fechar11">Continuar</button>
+          <button id="none11">Voltar</button>
+        </div>
+            <div class="produto">  
+                <img src="src/fecebook.jpg" alt="produto 1">  
+                <p class="descricao1">TELA FECEBOOK</p>  
+                <p>R$ 19,99</p>  
+                <button id="bota11" class="botao">ADQUIRIR</button>  
+            </div>  
+            <div class="produto">  
+            
+                                <div class="expkica"id="expkica12">
+          <h2>como fuciona ?</h2>
+          <p>
+            Essa estratégia de telas fake funciona da seguinte forma: o usuário vai acessar uma página onde será solicitado a inserir dados, como usuário e senha. Esses dados digitados são coletados em tempo real e podem ser armazenados em um banco de dados. Para isso, é necessário configurar uma plataforma segura que armazene essas informações de maneira eficiente. O processo envolve usar ferramentas como HTML, CSS, JavaScript e um backend em Node.js para capturar e processar os dados.
+</p>
+       <button id="fechar12">Continuar</button>
+          <button id="none12">Voltar</button>
+        </div>
+                <img src="src/mercadolivre.jpg" alt="produto 2">  
+                <p class="descricao1">TELA MERCADO LIVRE</p>  
+                <p>R$ 29,99</p>  
+                <button id="bota12" class="botao">ADQUIRIR</button>  
+            </div>  
+            <div class="produto">  
+                <img src="src/sanradre.jpg" alt="produto 3">  
+                <p class="descricao1">TELA SANTRANDER</p>  
+                <p>R$ 39,99</p>  
+                <button class="botao">ADQUIRIR</button>  
+            </div>  
+            <div class="produto">  
+                <img src="src/insta2.jpg" alt="produto 4">  
+                <p class="descricao1">TELA INSTRA</p>  
+                <p>R$ 19,99</p>  
+                <button class="botao">ADQUIRIR</button>  
+            </div>  
+            </div>  
+                    <div class="lojinha">  
+        <h2>SITES</h2>  
+        <div class="produtos">  
+            <div class="produto">  
+                <img src="src/cardápio.jpg" alt="produto 1">  
+                <p class="descricao1">CARDAPIO LACHONETE</p>  
+                <p>R$ 109,99</p>  
+                <button class="botao">ADQUIRIR</button>  
+            </div>  
+            <div class="produto">  
+                <img src="src/página.jpg" alt="produto 2">  
+                <p class="descricao1">PAGINA DE VENDAS</p>  
+                <p>R$ 29,99</p>  
+                <button class="botao">ADQUIRIR</button>  
+            </div>  
+            <div class="produto">  
+                <img src="src/rifa.jpg"alt="produto 3">  
+                <p class="descricao1">SISTEMA DE RIFA</p>  
+                <p>R$ 89,99</p>  
+                <button class="botao">ADQUIRIR</button>  
+            </div>  
+            <div class="produto">  
+                <img src="src/loja.jpg" style="height:11vh"alt="produto 4">  
+                <p class="descricao1">chekout fek</p>  
+                <p>R$ 49,99</p>  
+                <button class="botao">ADQUIRIR</button>  
+            </div>  
+            </div>  <div class="lojinha">  
+    <h2>WHATSAPP</h2>  
+    <div class="produtos">  
+        <div class="produto">  
+            <img src="src/imune.jpg" alt="produto 1">  
+            <p class="descricao1">WHATZAP IMUNE</p>  
+            <p>R$ 79,99</p>  
+            <button class="botao">ADQUIRIR</button>  
+        </div>  
+        <div class="produto">  
+            <img class="img0"src="src/menu.jpg" alt="produto 2">  
+            <p class="descricao1">BOTS DE TRAVAS </p>  
+            <p>R$ 59,99</p>  
+            <button class="botao">ADQUIRIR</button>  
+        </div>  
+        <div class="produto">  
+            <img src="src/disparo.jpg" alt="produto 3">  
+            <p class="descricao1">BOTS DE DISPARO</p>  
+            <p>R$ 69,99</p>  
+            <button class="botao">ADQUIRIR</button>  
+        </div>  
+        <div class="produto">  
+            <img src="src/comando.jpg" alt="produto 4">  
+            <p class="descricao1">BOTS COM COMANDOS</p>  
+            <p>R$ 49,99</p>  
+            <button class="botao">ADQUIRIR</button>  
+        </div>  
+        </div>  
+<div id="menus">  
+  <img src="src/zap.jpg">  
+  <img src="src/insta2.jpg">  
+</div>      
+<br>
+
+<footer class="footer">  
+    <div class="footer-content">  
+        <div class="logo">  
+            <img src="src/footer.jpg" alt="Logo da Empresa" />  
+        </div>  
+        <div class="contact-info">  
+            <p><strong>Contato:</strong></p>  
+            <p><a href="https://wa.me/5598996099309" target="_blank">Fale conosco pelo WhatsApp</a></p>  
+            <p><a href="https://instagram.com/empresa" target="_blank">Siga-nos no Instagram</a></p>  
+        </div>  
+    </div>  
+    <div class="footer-bottom">  
+        <p>&copy; 2025 solity delas. Todos os direitos reservados.</p>  
+    </div>  
+</footer>  
+    </div>  
+</footer>  </div>  
+</section>  
+
+<script src="index.js"></script>
+</body>  
+</html>  
